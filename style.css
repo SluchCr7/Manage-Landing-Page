@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Commissioner:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+--Bright-Red: hsl(12, 88%, 59%);
+--Dark-Blue: hsl(228, 39%, 23%);
+
+/* ### Neutral */
+
+--Dark-Grayish-Blue: hsl(227, 12%, 61%);
+--Very-Dark-Blue: hsl(233, 12%, 13%);
+--Very-Pale-Red: hsl(13, 100%, 96%);
+--Very-Light-Gray: hsl(0, 0%, 98%);
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: "Be Vietnam Pro", sans-serif;
+    width: 100%;
+    min-height: 100vh;
+}
+.Content nav ul li{
+    font-size: 1rem;
+    color: var(--Dark-Blue);
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: .7s ease;
+}
+.Content nav ul li:hover{
+    color: var(--Dark-Grayish-Blue);
+}
+.btn_main{
+    width: 170px;
+    background-color: var(--Bright-Red);
+    color: #fff;
+    padding: 13px 10px;
+    border-radius: 20px;
+    border: none;
+    transition: .7s ease;
+}
+.btn_main:hover{
+    background: linear-gradient( to left ,var(--Bright-Red) , var(--Very-Pale-Red));
+}
+.Number_card{
+    background-color: var(--Bright-Red);
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    width: 120px;
+    text-align: center;
+}
+
+.card_creator{
+    background-color: var(--Very-Light-Gray);
+}
+.Ads{
+    background-color: var(--Bright-Red);
+}
+.Ads .btn_main{
+    background-color: white !important;
+    color: var(--Bright-Red) !important;
+}
+.left_footer{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: start !important;
+    gap: 15rem !important;
+}
+.logo_cont {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 2.5rem !important;
+    padding: 20px 0;
+}
+footer{
+    background-color: var(--Very-Dark-Blue);
+}
+footer .icons i , footer .links .link span{
+    color: white;
+}
+.form input{
+    padding: 15px;
+    background-color: white;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    width: 250px;
+    color: var(--Bright-Red);
+    outline: none;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.form button{
+    padding: 15px;
+    background-color: var(--Bright-Red);
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    color: white;
+    outline: none;
+    
+}
+.none{
+    display: none !important;
+}
+.form input::placeholder{
+    color: var(--Dark-Blue);
+}
+@media (max-width : 767px) {
+    nav{
+        ul{
+            display: none !important;
+        }
+    }
+    .home{
+        flex-direction: column-reverse !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        .img_home{
+            width: 100% !important;
+        }
+        .txt-home{
+            width: 100% !important;
+            text-align: center;
+            align-items: center !important;
+            h1{
+                width: 100%;
+            }
+        }
+    }
+    .creators{
+        gap: 4rem;
+    }
+        footer{
+            padding: 5rem 0 5rem 0 !important;
+            flex-direction: column !important;
+            .left_footer{
+                flex-direction: column !important;
+                gap: 1rem !important;
+                align-items: center !important;
+                margin-bottom: 20px;
+                .logo_cont{
+                    .icons{
+                        flex-direction: row !important;
+                        gap: 2rem !important;
+                    }
+                }
+                .links{
+                    flex-direction: column;
+                    align-items: center !important;
+                    gap: 2rem   !important;
+                    .link{
+                        align-items: center !important;
+                    }
+                }
+            }
+            .right_footer{
+                align-items: center;
+            }
+        }
+        .Ads{
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            span{
+                width: 100% !important;
+                text-align: center !important;
+            }
+        }
+}
+
+@media (max-width : 767px) {
+.choose {
+        padding-left: 0rem !important;
+
+        .content_choose {
+            flex-direction: column !important;
+            align-items: center !important;
+
+            .Left-choose {
+                align-items: center !important;
+                text-align: center;
+                margin-bottom: 4rem;
+                width: 100%;
+            }
+            
+            .Right_choose {
+                width: 100% !important;
+                .Card_info {
+                    flex-direction: column !important;
+                    align-items: center !important;
+                    text-align: center !important;
+
+                    .info_card {
+                        align-items: center !important;
+
+                        p {
+                            text-align: center;
+                            width: 80% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .Content{
+        nav{
+            button{
+                display: none !important;
+            }
+            i{
+                display: block !important;
+            }
+        }
+    }
+}
+.none{
+    display: none !important;
+}
+@media (min-width : 1200px) and (max-width : 1700px) {
+    .home{
+        padding-left: 8rem !important;
+        padding-right: 8rem !important;
+        .txt-home{
+            h1{
+                font-size: 3.5rem !important;
+                width: 100% !important;
+            }
+        }
+    }
+    footer{
+        .left_footer{
+            gap: 8rem !important;
+        }
+    }
+}

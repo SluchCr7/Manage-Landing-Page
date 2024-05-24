@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Manage landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="Content flex flex-col items-center w-full relative">
+    <nav class="flex flex-row items-center w-full justify-between pt-[2rem] pb-[5rem] px-[5rem]">
+      <img src="images/logo.svg" alt="">
+      <ul class="flex flex-row items-center gap-5">
+        <li><a href="">Pricing</a></li>
+        <li><a href="">Product</a></li>
+        <li><a href="">About us</a></li>
+        <li><a href="">Careers</a></li>
+        <li><a href="">Community</a></li>
+      </ul>
+      <div class="flex flex-row items-center gap-4">
+        <button class="btn_main">Get Started</button>
+        <i class="fa-solid fa-bars text-2xl none text-black"></i>
+      </div>
+      
+    </nav>
+    <div class="home flex flex-row items-center w-full px-[15rem]">
+      <div class="txt-home flex flex-col items-start gap-3 w-[50%]">
+        <h1 class="text-6xl font-bold w-[80%] leading-[4rem]">Bring everyone together to build better products.</h1>
+        <p class="text-xl text-gray-500 w-[70%] py-4">Manage makes it simple for software teams to plan day-to-day
+          tasks while keeping the larger team goals in view.</p>
+        <button class="btn_main">Get Started</button>
+      </div>
+      <div class="img_home w-[50%]">
+        <img class="z-[999]" src="images/illustration-intro.svg" alt="">
+        <img class="absolute top-0 right-0 z-[-1]" src="images/bg-tablet-pattern.svg" alt="">
+      </div>
+    </div>
+    <div class="choose flex flex-row relative items-start justify-between pl-[12rem] my-[12rem]">
+      <div class="content_choose flex flex-row items-start w-full relative">        
+        <div class="Left-choose flex flex-col items-start w-[50%]">
+          <h1 class="text-5xl font-semibold w-[90%]">What’s different about Manage?</h1>
+          <p class="text-xl text-gray-500 w-[80%] py-4">Manage provides all the functionality your team needs, without
+          the complexity. Our software is tailor-made for modern digital
+          product teams.</p>
+        </div>
+        <div class="Right_choose flex flex-col items-start gap-4 w-[50%]">
+          <div class="Card_info flex flex-row items-start gap-4">
+            <div class="Number_card">01</div>
+            <div class="info_card flex flex-col items-start">
+              <h3 class="text-xl font-semibold">Track company-wide progress</h3>
+              <p class="text-[17px] text-gray-500 w-[70%] py-[15px]">See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.</p>
+            </div>
+          </div>
+          <div class="Card_info flex flex-row items-start gap-4">
+            <div class="Number_card">01</div>
+            <div class="info_card flex flex-col items-start">
+              <h3 class="text-xl font-semibold">Track company-wide progress</h3>
+              <p class="text-[17px] text-gray-500 w-[70%] py-[15px]">See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.</p>
+            </div>
+          </div>
+          <div class="Card_info flex flex-row items-start gap-4">
+            <div class="Number_card">01</div>
+            <div class="info_card flex flex-col items-start">
+              <h3 class="text-xl font-semibold">Track company-wide progress</h3>
+              <p class="text-[17px] text-gray-500 w-[70%] py-[15px]">See how your day-to-day tasks fit into the wider vision. Go from
+              tracking progress at the milestone level all the way done to the
+              smallest of details. Never lose sight of the bigger picture again.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg">
+        <img class="absolute z-[-1] left-[-30rem] bottom-[-33rem]" src="images/bg-tablet-pattern.svg" alt="">
+      </div>
+    </div>
+    <div class="creators grid grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 gap-8">
+      <div class="card_creator relative flex flex-col p-[20px] items-center w-[500px] lg:w-[400px]">
+        <img src="images/avatar-anisha.png" class="absolute w-[80px] h-[80px] top-[-35px]" alt="">
+        <div class="details flex flex-col items-center gap-3 pt-[3rem]">
+          <span class="name_creator py-4">Ansiha ALi</span>
+          <p class="text-center">“Manage has supercharged our team’s workflow. The ability to maintain
+            visibility on larger milestones at all times keeps everyone motivated.”</p>
+        </div>
+      </div>
+      <div class="card_creator relative flex flex-col p-[20px] items-center w-[500px] lg:w-[400px]">
+        <img src="images/avatar-ali.png" class="absolute w-[80px] h-[80px] top-[-35px]" alt="">
+        <div class="details flex flex-col items-center gap-3 pt-[3rem]">
+          <span class="name_creator py-4">Ali Bravo</span>
+          <p class="text-center">“We have been able to cancel so many other subscriptions since using
+          Manage. There is no more cross-channel confusion and everyone is much
+          more focused.”</p>
+        </div>
+      </div>
+      <div class="card_creator relative flex flex-col p-[20px] items-center w-[500px] lg:w-[400px]">
+        <img src="images/avatar-anisha.png" class="absolute w-[80px] h-[80px] top-[-35px]" alt="">
+        <div class="details flex flex-col items-center gap-3 pt-[3rem]">
+          <span class="name_creator py-4">Richard Watts</span>
+          <p class="text-center">“Their software allows us to track, manage and collaborate on our projects
+          from anywhere. It keeps the whole team in-sync without being intrusive.”</p>
+        </div>
+      </div>
+    </div>
+    <div class="Ads flex flex-row items-center justify-between w-full px-[5rem] py-[4rem] mt-[12rem]">
+      <span class="text-4xl text-white w-[30%]">Simplify how your team works today.</span>
+      <button class="btn_main">Get Started</button>
+    </div>
+  <footer class="footer flex flex-row items-center justify-between py-[5rem] px-[8rem] w-full">
+    <div class="left_footer flex-row items-start">
+      <div class="logo_cont flex-col items-center gap-6">
+        <img src="images/logo.svg" alt="logo">
+        <div class="icons flex flex-row items-center gap-[1.5rem]">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-pinterest"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+      </div>
+      <div class="links flex flex-row items-start gap-[5rem]">
+        <div class="link flex flex-col items-start gap-4">
+          <span>Jome</span>
+          <span>Pricing</span>
+          <span>Products</span>
+          <span>About Us</span>
+        </div>
+        <div class="link flex flex-col items-start gap-4">
+          <span>Careers</span>
+          <span>Community</span>
+          <span>Privacy Policy</span>
+        </div>
+      </div>
+    </div>
+    <div class="right_footer flex flex-col items-end gap-[2rem]">
+      <div class="form flex flex-row items-center gap-2">
+        <input type="text" placeholder="Updates In Your Inpox" id="inputData">
+        <button id="ButtonData">Go</button>
+      </div>
+      <span class="text-[1rem] text-white">Copyright 2020. All Rights Reserved</span>
+    </div>
+  </footer>
+  <div class="sent_Data none p-[20px] fixed top-[5%] left-[45%] flex flex-col items-center gap-3 w-[300px] bg-black rounded-xl">
+    <i class="material-icons text-3xl text-green-600 ">check</i>
+    <span class="text-2xl uppercase font-semibold text-red-700">Message Sent</span>
+  </div>
+  <div class="Menu none flex flex-col items-center w-[90%] p-[30px] rounded-2xl bg-white fixed top-[25%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+    <ul class="flex flex-col items-center gap-7">
+      <li>Home</li>
+      <li>Services</li>
+      <li>Projects</li> 
+      <li>Contact</li>
+      <li>About</li>
+    </ul>
+  </div>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>
